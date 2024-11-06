@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Rayane</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: orange;
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+            font-family: "Roboto Slab", serif;
+        }
+
+        /* Style pour le texte en haut, centré */
+        p {
+            position: absolute;
+            top: 10px; /* Positionne le texte à 10px du haut */
+            left: 50%; /* Positionnement horizontal centré */
+            transform: translateX(-50%); /* Centre le texte horizontalement */
+            font-size: 18px;
+            font-weight: bold;
+            color: black; /* Couleur du texte */
+            margin: 0;
+            padding: 0;
+            z-index: 1; /* S'assurer que le texte reste visible au-dessus des autres éléments */
+        }
+
+        /* Style pour le bouton rouge en bas */
+        .bottom-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1;
+            font-family: "Roboto Slab", serif;
+        }
+
+        #central-image {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.1s linear;
+        }
+
+        .adversary {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>ICI VOUS POUVEZ ADMIRER LE GRAND RAYANE<br>MAIS ATTENTION A NE PAS LE FAIRE REPÉRER !</p>
+    </div>
+    <img id="central-image" src="rayane.jpg" alt="Cible principale">
+
+    <!-- Bouton rouge en bas de la page -->
+    <button class="bottom-button">Clique pour l'agrandir</button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
